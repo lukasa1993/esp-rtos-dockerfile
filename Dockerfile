@@ -10,3 +10,4 @@ FROM esp-sdk:latest
 COPY --from=builder /opt/esp-open-rtos /opt/esp-open-rtos
 
 ENV SDK_PATH /opt/esp-open-rtos
+
