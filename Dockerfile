@@ -2,7 +2,7 @@ FROM ubuntu:16.04 as builder
 
 RUN apt-get update && apt-get install -y git
 
-RUN git clone --recursive https://github.com/Superhouse/esp-open-rtos.git /opt/esp-open-rtos
+RUN git clone --recursive https://github.com/lukasa1993/esp-open-rtos.git /opt/esp-open-rtos
 
 
 FROM esp-sdk:latest
