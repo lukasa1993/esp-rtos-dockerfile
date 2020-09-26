@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y git
 RUN git clone --recursive https://github.com/lukasa1993/esp-open-rtos.git /opt/esp-open-rtos
 
 
-FROM esp-sdk:latest
+FROM mtkvnela/esp-sdk-dockerfile:latest
 
 COPY --from=builder /opt/esp-open-rtos /opt/esp-open-rtos
 
